@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Mulish';
+}
+
+.logo{
+    width: 160px;
+    height: 41px;
+}
+
+.header{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    height: 900px;
+}
+
+.header .header_nav_bar{
+    max-width: 1140px;
+    width: 100%;
+    margin: 57px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .menu ul{
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    font-size:18px;
+    list-style: none;
+}
+
+.header .menu ul  li a{
+    text-decoration: none;
+    color: #1F1534;
+    opacity: 0.5;
+}
+
+#nav_toggle{
+    display: none;
+}
+
+.menu .nav_toggle{
+    position: relative;
+    display: none;
+    border: 0;
+    background: none;
+}
+
+.menu .nav_toggle::before{
+    content: 'MENU';
+}
+
+.nav_toggle label{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header .menu ul li a:hover{
+    font-weight: bold;
+    color: #000000;
+    opacity: .9;
+}
+
+.header .main_header{
+    position: relative;
+    max-width: 1250px;
+    width: 100%;
+    margin-left: 160px;
+    margin-top: 186px;
+    align-self: center;
+}
+
+.header .main_header * {
+    position: relative;
+    z-index: 1;
+}
+
+.header .main_header h1{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+    mix-blend-mode: normal;
+}
+
+.header .main_header p {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px;
+    color: #7D7987;
+    mix-blend-mode: normal;
+}
+
+.header .main_header .main_buttns{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    background: #458FF6;
+    border-radius: 55px;
+    Width:200px;
+    Height:56px;
+    animation: main_buttns 1.5s infinite;
+}
+
+.main_buttns:hover {
+	animation: none;
+}
+
+@keyframes main_buttns {
+	0% {
+		box-shadow: 0 0 0 0 rgba(228, 25, 103, 0.4);
+	}
+	70% {
+		box-shadow: 0 0 0 10px rgba(228, 25, 49, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(228, 25, 49, 0);
+	}
+}
+
+.header .main_header .main_buttns a {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 57px;
+    color: #FFFFFF; 
+    mix-blend-mode: normal;
+    text-decoration: none;
+}
+
+.header .main_header .icon{
+    position: absolute;
+    width: 796px;
+    height: 448px;
+    top: -50px;
+    left: 500px;
+    z-index: 0;
+}
+
+.element{
+    position: absolute;
+    margin-top: 130px;
+    margin-left: -200px;
+}
+
+.body1{
+    position: relative;
+    margin-top: 179px;
+    height: 1133px;
+    overflow: hidden;
+}
+
+.text h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+    color: #000000;
+    mix-blend-mode: normal;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+
+.text p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+    mix-blend-mode: normal;
+    margin-top: 33px;
+    width: 900px;
+    text-align: center;
+    margin-left: 310px;
+}
+
+.spisok{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 255px;
+    width: 1170px;
+}
+
+.conteiner1{
+    transition: all 0.3s linear; 
+}
+
+.conteiner2{
+    transition: all 0.3s linear; 
+}
+
+.conteiner3{
+    transition: all 0.3s linear; 
+}
+
+.conteiner4{
+    transition: all 0.3s linear; 
+}
+
+.conteiner5{
+    transition: all 0.3s linear; 
+}
+
+.conteiner6{
+    transition: all 0.3s linear; 
+}
+
+.conteiner1:hover {
+    position: relative;
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(69, 28, 144, 0.349);
+}
+
+.conteiner2:hover {
+    position: relative;
+    opacity: 1;
+    transition: all 0.3s linear;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(69, 28, 144, 0.349);
+}
+
+.conteiner3:hover {
+    position: relative;
+    opacity: 1;
+    transition: all 0.3s linear;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(69, 28, 144, 0.349);
+}
+
+.conteiner4:hover {
+    position: relative;
+    opacity: 1;
+    transition: all 0.3s linear;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(69, 28, 144, 0.349);
+}
+
+.conteiner5:hover {
+    position: relative;
+    opacity: 1;
+    transition: all 0.3s linear;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(69, 28, 144, 0.349);
+}
+
+.conteiner6:hover {
+    position: relative;
+    opacity: 1;
+    transition: all 0.3s linear;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(69, 28, 144, 0.349);
+}
+
+.spisok div{
+    width: 350px;
+    height: 354px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.025);
+    border-radius: 7%;
+    margin-right: 34px;
+}
+
+.spisok2{
+    display: flex;
+    margin-left: 255px;
+    margin-top: 37px;
+    width: 1170px;
+}
+
+.spisok2 div{
+
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.021);
+    width: 350px;
+    height: 354px;
+    border-radius: 7%;
+    margin-right: 34px;
+}
+
+.spisok div h5{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 56px;
+    color: #000000;
+    mix-blend-mode: normal;
+    margin-left: 34px;
+}
+
+.spisok div img{
+    margin-top: 54px;
+    margin-left: 34px;
+}
+
+.spisok div p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7D7987;
+    mix-blend-mode: normal;
+    margin-left: 34px;
+}
+
+.element2{
+    position: absolute;
+    margin-top: 20px;
+    z-index: -1;
+}
+
+.element3{
+    position: absolute;
+    margin-top: 390px;
+    margin-left: 1290px;
+    z-index: -1;
+}
+
+.spisok2 div h5{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 56px;
+    color: #000000;
+    mix-blend-mode: normal;
+    margin-left: 34px;
+}
+
+.spisok2 div p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7D7987;
+    mix-blend-mode: normal;
+    margin-left: 34px;
+}
+
+.spisok2 div img{
+    margin-top: 54px;
+    margin-left: 34px;
+}
+
+.body1 .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    background: white;
+    border: 1px solid #458FF6;
+    border-radius: 55px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 60px;
+    color: #458FF6;
+    mix-blend-mode: normal;
+    margin-left: 700px;
+    margin-top: 69px;
+}
+
+.body2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1219.58px;
+    height: 440px;
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 24px;
+    margin-top: 286px;
+    margin-left: 160px;
+    overflow: hidden;
+}
+
+.body2 h4{
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.line{
+    text-align: center;
+}
+
+.element4{
+    position: absolute;
+    margin-top: 190px;
+    margin-left: -50px;
+    z-index: -1;
+}
+
+.element5{
+    position: absolute;
+    margin-top: -350px;
+    margin-left: 1140px;
+}
+
+.niz{
+    display: flex;
+}
+
+.niz .logo2 {
+   width: 500px;
+   display: flex;
+   justify-content: center;
+}
+
+.niz .logo2 img{
+    float: left;
+    margin: 7px 7px 7px 0;
+    margin-left: 118px;
+    margin-top: 66px;
+}
+
+.avtor{
+    width: 183px;
+    margin-left: 29px;
+}
+
+.avtor h6{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin-top: 105px;
+}
+
+.avtor p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.niz .text2{
+    width: 420px;
+    margin-top: 77px;
+    margin-left: 111px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.9);
+    mix-blend-mode: normal;
+}
+
+.navig{
+    margin-top: 42px;
+    text-align: center;
+}
+
+.element6{
+    position: absolute;
+    margin-left: 1387px;
+    margin-top: 106px;
+}
+
+.body3{
+    display: flex;
+    margin-top: 259px;
+    margin-left: 89px;
+    overflow: hidden;
+}
+
+.text_body3{
+    width: 486px;
+    margin-top: 50px;
+    margin-left: 137px;
+}
+
+.text_body3 h5{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+    color: #000000;
+    mix-blend-mode: normal;
+    margin-bottom: 26px;
+}
+
+.text_body3 p{
+    margin-top: 31px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+    mix-blend-mode: normal;
+}
+
+.body3 .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    background: white;
+    border: 1px solid #458FF6;
+    border-radius: 55px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 60px;
+    color: #458FF6;
+    mix-blend-mode: normal;
+    margin-top: 69px;
+}
+
+.body4{
+    display: flex;
+    margin-top: 259px;
+    overflow: hidden;
+    height: 500px;
+}
+
+.body4 .fon{
+    margin-left: 71px;
+}
+
+.text_body4{
+    width: 420px;
+    height: 375px;
+    margin-top: 50px;
+    margin-left: 234px;
+}
+
+.text_body4 h5{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+    color: #000000;
+    mix-blend-mode: normal;
+    margin-bottom: 26px;
+}
+
+.text_body4 p{
+    margin-top: 31px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+    mix-blend-mode: normal;
+}
+
+.body4 .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    background: white;
+    border: 1px solid #458FF6;
+    border-radius: 55px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 60px;
+    color: #458FF6;
+    mix-blend-mode: normal;
+    margin-top: 69px;
+}
+
+.text_body4 a img{
+    margin-left: 14.79px;
+}
+
+.element7{
+    position: absolute;
+    margin-left: 1250px;
+    margin-top: 190px;
+    z-index: -1;
+}
+
+.footer{
+    display: flex;
+    height: 432px;
+    width: auto;
+    margin-top: 259px;
+    overflow: hidden;
+    overflow: hidden;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+}
+
+.main_footer{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 600px 270px 270px 270px;
+    margin-top: 118px; 
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #dfdfdf;
+    mix-blend-mode: normal;
+}
+
+.stol1{
+    width: 391px;
+    height: 201px;
+    margin-left: 190px;
+}
+
+.stol1 img{
+    margin-bottom: 22px;
+}
+
+.stol1 p{
+    margin-bottom: 31px;
+}
+
+.stol2{
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 145px;
+}
+
+.stol2 .p{
+    margin-bottom: 30px;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.stol2 p{
+    margin-bottom: 10px;
+}
+
+.stol3{
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 145px;
+}
+
+.stol3 .p{
+    margin-bottom: 30px;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.stol3 p{
+    margin-bottom: 10px;
+}
+
+.stol4{
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 145px;
+}
+
+.stol4 .p{
+    margin-bottom: 30px;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.stol4 p{
+    margin-bottom: 10px;
+}
+
+.element8{
+    position: absolute;
+    margin-top: 215px;
+}
